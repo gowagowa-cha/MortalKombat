@@ -20,11 +20,9 @@ const player2 = {
 
 const $arenas = document.querySelector('.arena1')
 
-function createPlayer(play){
+function createPlayer(playerClass, play){
 	const player = document.createElement('div');	
-	if(play.name === 'Sonya') {
-		player.classList.add('player2')
-	} player.classList.add('player1')
+	player.classList.add(playerClass)
 
 	const progressbar = document.createElement('div');
 	progressbar.classList.add('progressbar')
@@ -48,5 +46,5 @@ function createPlayer(play){
 	$arenas.appendChild(player)
 }
 
-createPlayer(player1)
-createPlayer(player2)
+createPlayer('player1', player1)
+createPlayer('player2' , player2)
