@@ -81,7 +81,7 @@ function changeHP(num) {
 	 return this.hp
 }
 
-
+// создаем кнопку
 function createReloadButton() {
 	const $reloadWrap = createElement('div', 'reloadWrap')
 	const $btn = createElement('button', 'button')
@@ -93,9 +93,6 @@ function createReloadButton() {
 	$arenas.appendChild($reloadWrap);
 	return $reloadWrap
 }
-
-
-
 
 $randomButton.addEventListener('click', function() {
 	player1.changeHP(getRandom(20))
